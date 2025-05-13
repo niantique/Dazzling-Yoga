@@ -181,6 +181,7 @@ body {
   #faq {
     padding-top: 5em;
     background-color: var(--background-color);
+    height: 90vh;
     h2 {
       text-align: center;
       text-transform: uppercase;
@@ -202,6 +203,96 @@ body {
           h3 {
             color: var(--font-color2);
           }
+        }
+      }
+    }
+  }
+  #subscription {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/assets/teacher3.jpg");
+    background-position: 20% 80%;
+    background-repeat: no-repeat;
+    height: 60vh;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      div {
+        background-color: rgb(255, 255, 255, 0.3);
+        border-radius: 5px;
+        width: 18vw;
+        height: 38vh;
+        text-transform: uppercase;
+        text-align: center;
+        h3 {
+          color: var(--font-color3);
+          font-size: 1.6em;
+        }
+        h5,
+        p {
+          color: var(--font-color1);
+        }
+        p {
+          text-align: justify;
+          height: 25vh;
+          width: 14vw;
+        }
+        h3,
+        h5 {
+          width: 15vw;
+        }
+      }
+    }
+  }
+  #newsletter {
+    background-color: var(--background-color);
+    text-align: center;
+    text-transform: uppercase;
+    height: 30vh;
+    padding-top: 3em;
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      color: var(--font-color2);
+      padding-top: 1em;
+      padding-bottom: 2em;
+    }
+    a {
+      background-color: var(--font-color1);
+      opacity: 80%;
+      padding: 15px 25px 15px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: var(--font-color3);
+    }
+  }
+  #clientsReview {
+    display: flex;
+    background-color: var(--background-color);
+    text-transform: uppercase;
+    text-align: center;
+    img {
+      width: 50vw;
+    }
+    div {
+      width: 50vw;
+      h3 {
+        color: var(--font-color1);
+        font-size: 2em;
+        margin-top: 1em;
+        span {
+          color: var(--font-color3);
         }
       }
     }
