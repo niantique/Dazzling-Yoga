@@ -58,14 +58,83 @@ body {
 
   #offer {
     ul {
-      li {
+      li:first-child {
+        div:first-child {
+          background-image: url(/assets/main2.jpg);
+          h2 {
+            padding-top: 28vh;
+          }
+        }
+      }
+      li:nth-child(2) {
+        div:last-child {
+          background-image: url(/assets/main4.jpg);
+        }
+      }
+      li:last-child {
+        div:first-child {
+          background-image: url(/assets/main3.jpg);
+          h2 {
+            padding-top: 21vh;
+          }
+        }
+      }
+      li:first-child, li:last-child {
+        display: flex;
         div:first-child {
           width: 50vw;
-          background-image: url(/assets/main2.jpg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
+          filter: brightness(90%);
           height: 50vh;
+          h2 {
+            color: var(--font-color2);
+            writing-mode: vertical-lr;
+            padding-left: 45vw;
+            font-size: 4em;
+            text-transform: uppercase;
+            font-weight: 300;
+          }
+        }
+        div:last-child {
+          background-color: var(--background-color);
+          width: 50vw;
+          h2 {
+            text-transform: uppercase;
+            opacity: 70%;
+            font-weight: 500;
+            font-size: 2em;
+            padding-top: 10vh;
+            padding-left: 2vw;
+          }
+        }
+      }
+      li:nth-child(2) {
+        display: flex;
+        height: 50vh;
+       div:first-child {
+        background-color: var(--background-color);
+        width: 50vw;
+        h2 {
+          text-transform: uppercase;
+          opacity: 70%;
+          font-weight: 500;
+          font-size: 2em;
+          padding-top: 10vh;
+     
+        }
+       }
+       div:last-child {
+        width: 50vw;
+        h2 {
+          color: var(--font-color2);
+          writing-mode: vertical-lr;
+          font-size: 4em;
+          text-transform: uppercase;
+          font-weight: 300;
+          padding-top: 24vh;
+        }
         }
       }
     }
