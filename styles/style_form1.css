@@ -23,34 +23,33 @@ body {
   text-transform: uppercase;
   section {
     text-align: center;
-    background-image: url(/assets/class1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url("/assets/class1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    div:first-child {
-      padding-top: 15vh;
+    div {
+      padding-top: 18vh;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      margin-left: 11em;
-      margin-right: 11em;
-      a {
-        font-size: 6em;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 5px;
-        width: 6em;
-        color: var(--font-color1);
-        text-decoration: none;
-      }
+      margin-left: 9em;
+      margin-right: 9em;
     }
-    div:last-child {
-      padding-top: 15vh;
+    a {
+      font-size: 6em;
+      background-color: rgba(255, 255, 255, 0.3);
+      margin: 5vh auto 0 auto;
+      border-radius: 5px;
+      width: 6em;
+      color: var(--font-color1);
+      text-decoration: none;
     }
     h1 {
-        font-size: 8em;
-        opacity: 70%;
+      font-size: 8em;
+      opacity: 70%;
+      margin-top: 15vh;
     }
   }
 }
-
-
