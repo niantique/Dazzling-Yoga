@@ -1,0 +1,56 @@
+:root {
+  --background-color: rgba(150, 118, 103, 1);
+  --font-color1: white;
+  --font-color2: rgba(77, 58, 48, 1);
+  --font-color3: rgba(53, 39, 32, 1);
+  --font-family1: "Antonio", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.antonio {
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--font-family1);
+  color: white;
+  text-transform: uppercase;
+  section {
+    text-align: center;
+    background-image: url(/assets/class1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    div:first-child {
+      padding-top: 15vh;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 11em;
+      margin-right: 11em;
+      a {
+        font-size: 6em;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        width: 6em;
+        color: var(--font-color1);
+        text-decoration: none;
+      }
+    }
+    div:last-child {
+      padding-top: 15vh;
+    }
+    h1 {
+        font-size: 8em;
+        opacity: 70%;
+    }
+  }
+}
+
+
