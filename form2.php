@@ -52,25 +52,31 @@ function test_input($data)
       <h1>Dazzling Yoga</h1>
 
       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        Firstname: <input type="text" name="firstname">
-        Lastname: <input type="text" name="lastname"><br><br>
-        Address: <input type="text" name="address">
-        Zipcode: <input type="text" name="zipcode"><br><br>
-        City: <input type="text" name="city">
-        Country: <input type="text" name="country"><br><br>
-        Mail: <input type="email" name="mail">
-        Phone: <input type="tel" name="phone"><br><br>
-        Birthday: <input type="date" name="birthday"><br><br>
-        Gender:
-        <input type="radio" name="gender" value="female">Female
-        <input type="radio" name="gender" value="male">Male
-        <input type="radio" name="gender" value="other">Other
-        <input type="radio" name="gender" value="other">Prefere not to say
-        <br><br>
-        <p>We ask for your gender information to ensure we can offer you the option to join gender-specific classes that best suit your preferences.</p>
-        <input type="radio" name="policy" value="policy">BY SUBMITTING THIS FORM YOU ACCEPT OUR POLICY AS LAID OUT ON OUR T&C’S <br>
-        <input type="submit" name="submit" value="Submit">
 
+        <div class="column">
+          <label>Firstname</label><input type="text" name="firstname">
+          <label>Address</label><input type="text" name="address">
+          <label>City</label><input type="text" name="city">
+          <label>Mail</label><input type="email" name="mail">
+          <label>Birthday</label><input type="date" name="birthday">
+        </div>
+        <div class="column">
+          <label>Lastname</label><input type="text" name="lastname">
+          <label>Zipcode</label><input type="text" name="zipcode">
+          <label>Country</label><input type="text" name="country">
+          <label>Phone</label><input type="tel" name="phone">
+        </div>
+        <div>
+          <label>Gender</label>
+          <input type="radio" name="gender" value="female">Female
+          <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="other">Other
+          <input type="radio" name="gender" value="other">Prefere not to say
+          <br><br>
+          <h5>We ask for your gender information to ensure we can offer you the option to join gender-specific classes that best suit your preferences.</h5>
+          <input type="radio" name="policy" value="policy">BY SUBMITTING THIS FORM YOU ACCEPT OUR POLICY AS LAID OUT ON OUR T&C’S <br>
+          <input type="submit" name="submit" value="Submit">
+        </div>
       </form>
 
 
