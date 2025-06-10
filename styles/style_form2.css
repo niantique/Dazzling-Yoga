@@ -60,7 +60,45 @@ body {
           }
         }
         div:last-child {
+          width: 40vw;
           margin-top: 1em;
+          label {
+            margin-right: 3vw;
+          }
+          input[type="radio"] {
+            margin-right: 1vw;
+            appearance: none;
+            font: inherit;
+            width: 1em;
+            height: 1em;
+            border: 0.08em solid var(--font-color1);
+            border-radius: 50%;
+          }
+          input[type="radio"]:checked {
+            font: inherit;
+            width: 1em;
+            height: 1em;
+            box-shadow: inset 1em 1em var(--font-color1);
+            border-radius: 50%;
+          }
+
+          h5 {
+            margin-bottom: 2vh;
+          }
+          input[type="submit"] {
+            border: 1px solid var(--font-color1);
+            border-radius: 10px;
+            background-color: var(--background-color);
+            color: var(--font-color1);
+            padding: 15px 25px 15px 25px;
+            text-transform: uppercase;
+            font-family: var(--font-family1);
+            font-size: 1em;
+          }
+          .submitbutton {
+            text-align: center;
+            margin-top: 5vh;
+          }
         }
       }
     }

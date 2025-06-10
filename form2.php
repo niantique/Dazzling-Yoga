@@ -68,14 +68,16 @@ function test_input($data)
         </div>
         <div>
           <label>Gender</label>
-          <input type="radio" name="gender" value="female">Female
-          <input type="radio" name="gender" value="male">Male
-          <input type="radio" name="gender" value="other">Other
-          <input type="radio" name="gender" value="other">Prefere not to say
+          <input type="radio" name="gender" value="female"><label>Female</label>
+          <input type="radio" name="gender" value="male"><label>Male</label>
+          <input type="radio" name="gender" value="other"><label>Other</label>
+          <input type="radio" name="gender" value="other"><label>Prefere not to say</label>
           <br><br>
           <h5>We ask for your gender information to ensure we can offer you the option to join gender-specific classes that best suit your preferences.</h5>
           <input type="radio" name="policy" value="policy">BY SUBMITTING THIS FORM YOU ACCEPT OUR POLICY AS LAID OUT ON OUR T&C’S <br>
-          <input type="submit" name="submit" value="Submit">
+          <div class="submitbutton">
+          <input type="submit" name="submit" value="Join us and discover our classes near you">
+        </div>
         </div>
       </form>
 

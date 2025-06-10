@@ -198,9 +198,9 @@ INSERT INTO city(name, zipcode, country_id) VALUES
 ('Miami', 33000, 5);
 
 INSERT INTO owner(firstname, lastname, address, email, phone, city_id) VALUES
-('Emily', 'Thompson', '4821 Maple Grove Lane', 'emily.thompson87@gmail.com', 5552874, 5),
-('William', 'Bay', '3261 Layman Court', 'william.b@gmail.com', 6783857621, 4),
-('Louisa', 'Cook', '2073 May Street', 'louisa.cook@gmail.com', 6062569923, 5);
+('Emily', 'Thompson', '4821 Maple Grove Lane', 'emily.thompson87@gmail.com', 5552874, 11),
+('William', 'Bay', '3261 Layman Court', 'william.b@gmail.com', 6783857621, 11),
+('Louisa', 'Cook', '2073 May Street', 'louisa.cook@gmail.com', 6062569923, 11);
 
 INSERT INTO subscription(name, price, description) VALUES
 ('Flexible Class Pass', 45, '- Members only pay for the classes they attend
@@ -214,4 +214,26 @@ INSERT INTO subscription(name, price, description) VALUES
 - Full access to every class including workshops and specialty sessions.');
 
 INSERT INTO user(firstname, lastname, address, email, phone, city_id, subscription_id) VALUES
-()
+('Mary', 'McDowell', '3554 Boone Street', 'mcdowellm@gmail.com', 3612898061, 11, 1),
+('Margarita', 'Lee', '3902 Scenicview Drive', 'margaritalee@gmail.com', 4309854524, 11, 1),
+('Joanne', 'Baker', '999 Eagle Drive', 'bakerjoanne@gmail.com', 7347442686, 11, 2),
+('Virginia', 'Slusse', '4663 Centennial Farm Road', 'vslusse@gmail.com', 7125864678, 11,3);
+
+INSERT INTO professor(firstname, lastname, address, email, phone, city_id) VALUES
+('Betty', 'Nickels', '899 Parrish Avenue', 'bettnick@gmail.com', 8312453205, 11),
+('Kathy', 'Mathews', '2235 Pine Garden Lane', 'kathmath@gmail.com', 7707434198, 11);
+
+INSERT INTO studio(name, address, facilities, capacity, photos, website, slogan, socials, description, city_id, owner_id) VALUES
+('Yoga Box', '1011 Cole Ave', 'shower', 15, 'https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://www.yogabox.com/hollywood/', 'United We Flow', 'YogaBox', 'Situated at 1011 Cole Ave, the Yoga Box Hollywood studio merges LA’s dynamic spirit with the transformative power of yoga. This isn’t just another yoga class; it’s a revolution in fitness and well-being. Dive into our three signature formats: Sculpt, Power Flow, and Restore, each designed to challenge your body, sharpen your mind, and elevate your spirit so you can choose that style of yoga that fits your goals.
+
+At Yoga Box Hollywood, our expert instructors are dedicated to guiding you from one breakthrough to the next. Our state-of-the-art facility is designed for top-tier performance and deep relaxation, making it the perfect arena for both seasoned yogis and beginners to thrive. You can reach new levels of strength, flexibility, and balance, and we’re here to help.
+
+Are you ready to step onto the mat? We’re offering all new members a chance to start strong with our 3-Free Class Trial. Grab your mats and towels, and join us in the heart of Hollywood and be part of a fitness movement that’s redefining what it means to be strong and centered.', 11, 10),
+('Ya Fit Pilates Studio', '5867 Kanan Road', 'Lotion', 20, 'https://lh3.googleusercontent.com/p/AF1QipNJjkYjRoiBMz9QIA39kgKEvlUCV6dDF0v7_kCM=s294-w294-h220-n-k-no', 'https://yafitpilates.com/agoura-hills/', 'Moove better Feel better Live better', 'YaFitPilates', 'Introducing Ya Fit Pilates, where tradition meets innovation in the heart of Agoura Hills! Discover a fusion of the classic principles of Pilates with dynamic, cutting-edge techniques that redefine your fitness journey.', 11, 9);
+
+INSERT INTO class(name, category, description) VALUES
+('Ashtanga Yoga', 'Yoga', 'Ashtanga Yoga is a dynamic and structured form of yoga that combines breath, movement, and meditation. It is a traditional practice popularized by Sri K. Pattabhi Jois, emphasizing a set sequence of postures linked by breath and movement (vinyasa).'),
+('Hatha Yoga', 'Yoga', 'Hatha Yoga is a traditional form of yoga that focuses on physical postures (asanas), breath control (pranayama), and meditation to balance the body and mind. It is gentle and accessible, promoting flexibility, strength, and relaxation, making it ideal for beginners and those seeking a mindful, holistic practice.'),
+('Vinyasa Yoga', 'Yoga', 'Vinyāsa is a smooth transition between asanas in flowing styles of modern yoga as exercise such as Vinyasa Krama Yoga and Ashtanga Vinyasa Yoga.'),
+('Pilates', 'Other', 'Pilates is a system of exercise and movement that is designed to increase strength, flexibility, and balance. Pilates integrates breath and movement with proper body mechanics to increase greater physical and mental awareness of how the body moves and feels.');
+
