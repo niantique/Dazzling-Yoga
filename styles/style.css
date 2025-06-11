@@ -209,9 +209,10 @@ body {
     }
   }
   #subscription {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/assets/teacher3.jpg");
-    background-position: 20% 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+      url("/assets/hand.jpg");
+    background-size: cover;
+    background-position: 40% 80%;
     background-repeat: no-repeat;
     height: 60vh;
     padding-top: 3em;
@@ -230,19 +231,19 @@ body {
       padding-top: 1em;
       padding-bottom: 1em;
       div {
-        background-color: rgb(255, 255, 255, 0.3);
+        background-color: rgb(255, 255, 255, 0.6);
         border-radius: 5px;
-        width: 18vw;
+        width: 16vw;
         height: 38vh;
         text-transform: uppercase;
         text-align: center;
         h3 {
-          color: var(--font-color3);
+          color: var(--font-color2);
           font-size: 1.6em;
         }
         h5,
         p {
-          color: var(--font-color1);
+          color: var(--font-color2);
         }
         p {
           text-align: justify;
